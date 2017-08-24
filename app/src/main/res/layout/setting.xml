@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <FrameLayout
+        android:layout_width="800dp"
+        android:layout_height="300dp"
+        android:background="@color/colorwhite"
+        android:id="@+id/frameLayout2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="31dp"
+                android:layout_marginEnd="99dp"
+                android:layout_marginRight="99dp"
+                android:text="10 เกมส์"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_alignStart="@+id/frameLayout2"
+        android:layout_alignTop="@+id/frameLayout2"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="เลือกเวลาการแสดงภาพ" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="3 วินาที"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButton"
+        android:layout_alignBottom="@+id/radioButton"
+        android:layout_marginLeft="134dp"
+        android:layout_marginStart="134dp"
+        android:layout_toEndOf="@+id/radioButton"
+        android:layout_toRightOf="@+id/radioButton"
+        android:text="5 วินาที" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButton2"
+        android:layout_alignBottom="@+id/radioButton2"
+        android:layout_alignEnd="@+id/frameLayout2"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:text="10 วินาที" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="เลือกจำนวนภาพที่แสดง"
+        android:layout_below="@+id/radioButton"
+        android:layout_toLeftOf="@+id/radioButton"
+        android:layout_toStartOf="@+id/radioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:text="3 ภาพ" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioButton2"
+        android:layout_alignRight="@+id/radioButton2"
+        android:layout_alignTop="@+id/radioButton4"
+        android:text="6 ภาพ" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:layout_alignTop="@+id/radioButton5"
+        android:text="9 ภาพ" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/radioButton4"
+        android:layout_marginTop="17dp"
+        android:text="เลือกจำนวนเกมส์" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 เกมส์"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/radioButton4"
+        android:layout_alignStart="@+id/radioButton4"
+        android:layout_marginTop="15dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioButton7"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:text="5 เกมส์" />
+
+
+</RelativeLayout>
