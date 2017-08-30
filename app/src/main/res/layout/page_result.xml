@@ -9,18 +9,42 @@
         android:layout_height="300dp"
         android:background="@color/colorwhite"
         android:id="@+id/frameLayout2"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="78dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
 
-        <TextView
-            android:id="@+id/textTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:textSize="30dp"
-            android:text="TextView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textname"
+                android:layout_alignStart="@+id/textname" />
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="87dp"
+                android:text="TextView"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp" />
+        </RelativeLayout>
 
 
     </FrameLayout>
+
+
 
 </RelativeLayout>
