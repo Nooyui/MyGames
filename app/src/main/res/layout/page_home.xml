@@ -31,7 +31,7 @@
             android:layout_centerVertical="true">
 
             <Button
-                android:id="@+id/setting_game"
+                android:id="@+id/animal"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
@@ -43,7 +43,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/setting_game"
+                android:layout_below="@+id/animal"
                 android:layout_centerHorizontal="true"
                 android:text="สัตว์"
                 android:textStyle="bold"
@@ -182,47 +182,6 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:id="@+id/relativeLayout12"
-        android:layout_marginRight="14dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginTop="13dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <Button
-            android:id="@+id/setting"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/playmenu" />
-
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="21dp"
-        android:layout_alignBottom="@+id/relativeLayout12"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="ตั้งค่าเกมส์"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
 

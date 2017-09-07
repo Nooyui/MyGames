@@ -101,7 +101,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true">
             <Button
-                android:id="@+id/setting_game"
+                android:id="@+id/animal"
                 android:layout_width="300dp"
                 android:layout_height="150dp"
                 android:background="@drawable/playmenu"

@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class SettingTime extends AppCompatActivity {
+public class SettingTime1 extends AppCompatActivity {
     private RadioButton radio_time1;
     private RadioButton radio_time2;
     private RadioButton radio_time3;
@@ -21,7 +21,7 @@ public class SettingTime extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.setting_time);
+        setContentView(R.layout.setting_time_1);
 
 
         save = (Button) findViewById(R.id.buttonsave);
@@ -30,7 +30,7 @@ public class SettingTime extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                intent = new Intent(getApplication(), Game_Animal__3_picture.class);
+                intent = new Intent(getApplication(), Game_Animal__6_picture.class);
                 intent.putExtra("timeset",selectTime);
                 startActivity(intent);
 
@@ -96,7 +96,7 @@ public class SettingTime extends AppCompatActivity {
                 if (checked)
                   selectTime = 10000;
                // intent.putExtra("timeset",selectTime);
-                Toast.makeText(SettingTime.this, " 10.",
+                Toast.makeText(SettingTime1.this, " 10.",
                 Toast.LENGTH_SHORT).show();
 
                     // Pirates are the best
@@ -105,7 +105,7 @@ public class SettingTime extends AppCompatActivity {
                 if (checked)
                     selectTime = 15000;
             // intent.putExtra("timeset",selectTime);
-                Toast.makeText(SettingTime.this, " 15.",
+                Toast.makeText(SettingTime1.this, " 15.",
                     Toast.LENGTH_SHORT).show();
                     // Ninjas rule
                     break;
@@ -113,7 +113,7 @@ public class SettingTime extends AppCompatActivity {
                 if (checked)
                     selectTime = 20000;
              //  intent.putExtra("timeset",selectTime);
-                Toast.makeText(SettingTime.this, " 20.",
+                Toast.makeText(SettingTime1.this, " 20.",
                         Toast.LENGTH_SHORT).show();
 
                     // Ninjas rule

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout41"
+        android:layout_marginRight="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/relativeLayout42"
+        android:layout_toStartOf="@+id/relativeLayout42">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/playmenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout42"
+        android:layout_alignBaseline="@+id/relativeLayout41"
+        android:layout_alignBottom="@+id/relativeLayout41"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/playmenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout43"
+        android:layout_alignTop="@+id/relativeLayout42"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/playmenu"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout43"
+        android:layout_alignEnd="@+id/relativeLayout43"
+        android:layout_alignRight="@+id/relativeLayout43"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="แสดง 9 ภาพ"
+        android:textColor="@color/colorwhite"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="แสดง 6 ภาพ"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/colorwhite"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_toLeftOf="@+id/relativeLayout42"
+        android:layout_toStartOf="@+id/relativeLayout42"
+        android:text="แสดง 3 ภาพ"
+        android:textColor="@color/colorwhite"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="180dp"
+        android:id="@+id/relativeLayout11"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/label"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:text="เลือกโหมดแสดงรูปภาพ"
+            android:layout_alignTop="@+id/imageView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
