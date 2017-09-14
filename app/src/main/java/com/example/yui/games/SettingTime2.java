@@ -88,7 +88,6 @@ public class SettingTime2 extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
 
-        selectTime = 10000;
 
         // Check which radio button was clicked
         switch (view.getId()) {
@@ -118,6 +117,8 @@ public class SettingTime2 extends AppCompatActivity {
 
                     // Ninjas rule
                     break;
+            default:  selectTime = 10000 ;
+                break;
         }
     }
 }

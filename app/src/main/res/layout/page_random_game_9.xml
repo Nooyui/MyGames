@@ -76,7 +76,8 @@
         android:layout_alignBaseline="@+id/relativeLayout9"
         android:layout_alignBottom="@+id/relativeLayout9"
         android:layout_toRightOf="@+id/relativeLayout9"
-        android:layout_toEndOf="@+id/relativeLayout9">
+        android:layout_toEndOf="@+id/relativeLayout9"
+        android:id="@+id/relativeLayout45">
 
     <Button
         android:id="@+id/startGame"
@@ -198,9 +199,10 @@
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:id="@+id/relativeLayout28"
-        android:layout_alignBottom="@+id/imageView8"
-        android:layout_alignRight="@+id/relativeLayout7"
-        android:layout_alignEnd="@+id/relativeLayout7">
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/relativeLayout7"
+        android:layout_alignLeft="@+id/relativeLayout7"
+        android:layout_alignStart="@+id/relativeLayout7">
 
         <TextView
             android:id="@+id/textView32"
@@ -239,18 +241,21 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout39"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/relativeLayout36"
-        android:layout_toStartOf="@+id/relativeLayout36">
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_alignTop="@+id/settime"
+        android:layout_toRightOf="@+id/relativeLayout5"
+        android:layout_toEndOf="@+id/relativeLayout5"
+        android:layout_marginTop="21dp">
 
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
 
             android:layout_centerVertical="true"
@@ -270,17 +275,17 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout36"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/relativeLayout39"
         android:layout_alignLeft="@+id/relativeLayout33"
         android:layout_alignStart="@+id/relativeLayout33">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -300,17 +305,19 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout34"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/relativeLayout32"
-        android:layout_alignStart="@+id/relativeLayout32">
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:layout_alignTop="@+id/relativeLayout36"
+        android:layout_toRightOf="@+id/relativeLayout36"
+        android:layout_toEndOf="@+id/relativeLayout36">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -328,10 +335,10 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout37"
-        android:layout_below="@+id/relativeLayout39"
+        android:layout_alignTop="@+id/relativeLayout33"
         android:layout_alignLeft="@+id/relativeLayout39"
         android:layout_alignStart="@+id/relativeLayout39">
 
@@ -339,8 +346,8 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -360,19 +367,19 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginEnd="19dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout33"
-        android:layout_below="@+id/relativeLayout36"
-        android:layout_toLeftOf="@+id/relativeLayout32"
-        android:layout_toStartOf="@+id/relativeLayout32">
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_alignTop="@+id/relativeLayout32"
+        android:layout_toRightOf="@+id/relativeLayout37"
+        android:layout_toEndOf="@+id/relativeLayout37">
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -392,19 +399,17 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout32"
-        android:layout_below="@+id/relativeLayout34"
-        android:layout_toLeftOf="@+id/button6"
-        android:layout_toStartOf="@+id/button6">
+        android:layout_alignTop="@+id/relativeLayout45"
+        android:layout_alignLeft="@+id/relativeLayout34"
+        android:layout_alignStart="@+id/relativeLayout34">
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -425,17 +430,17 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout38"
-        android:layout_below="@+id/relativeLayout37"
+        android:layout_alignTop="@+id/relativeLayout40"
         android:layout_alignLeft="@+id/relativeLayout37"
         android:layout_alignStart="@+id/relativeLayout37">
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -455,9 +460,10 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:id="@+id/relativeLayout40"
+        android:layout_marginTop="37dp"
         android:layout_below="@+id/relativeLayout33"
         android:layout_alignLeft="@+id/relativeLayout33"
         android:layout_alignStart="@+id/relativeLayout33">
@@ -467,8 +473,8 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
@@ -486,24 +492,22 @@
 
 
     <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/relativeLayout44"
         android:layout_alignTop="@+id/relativeLayout40"
-        android:layout_toRightOf="@+id/relativeLayout33"
-        android:layout_toEndOf="@+id/relativeLayout33">
+        android:layout_alignLeft="@+id/relativeLayout32"
+        android:layout_alignStart="@+id/relativeLayout32">
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/imagec"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
-
-
-
-
+5
         <TextView
             android:id="@+id/textName9"
             android:layout_width="wrap_content"
@@ -517,6 +521,16 @@
 
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/home"
+         />
 
 
 

@@ -88,14 +88,13 @@ public class SettingTime extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
 
-        selectTime = 10000;
+
 
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.radio_time1:
                 if (checked)
                   selectTime = 10000;
-               // intent.putExtra("timeset",selectTime);
                 Toast.makeText(SettingTime.this, " 10.",
                 Toast.LENGTH_SHORT).show();
 
@@ -118,6 +117,9 @@ public class SettingTime extends AppCompatActivity {
 
                     // Ninjas rule
                     break;
+
+            default:  selectTime = 10000 ;
+                break;
         }
     }
 }

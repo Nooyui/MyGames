@@ -17,7 +17,7 @@ import java.util.Random;
 public class Game_Animal__9_picture extends AppCompatActivity {
 
 
-    private Button startGame, startTime, nextGame, stopgame,settime;
+    private Button startGame, startTime, nextGame, stopgame,settime,home;
     private ImageView image1, image2, image3, image4, image5, image6, image7, image8, image9;
     Intent intent;
     TextView textView1, textName1, textName2, textName3, textName4, textName5, textName6, textName7, textName8, textName9, textnamepicture;
@@ -32,60 +32,133 @@ public class Game_Animal__9_picture extends AppCompatActivity {
     private boolean isCanceled = false;
     int PicketImage = 0, LastpicketImage = 0;
 
-    String imageName[] = {
+//    String imageName[] = {
+//
+//            "ค้างคาว","ควาย","จระเข้","วัว","ลิง","ปู","อูฐ","งู","หมา","ช้าง","กระทิง","อีกา","เป็ด","เสือดาว","ไก่","แมว","กวาง","ปลาทอง","กบ","แพะ",
+//            "อิปโป","จิงโจ้","สิงโต","นกฮูก","นกแก้ว","นกเพนกวิ้น","กระต่าย","หมู","หนู","ปลาฉลาม","แกะ","แมงมุม","เสือ","ม้าลาย","เต่า","หมี","หอยทาก","ปลาดาว","ม้าน้ำ","ปลาโลมา"
+//    };
+//
+//    int randomName[] = {
+//            0, 0, 0, 0, 0, 0, 0, 0, 0
+//
+//
+//    };
+//
+//
+//    int[] image = {
+//            R.drawable.an1,
+//            R.drawable.an2,
+//            R.drawable.an3,
+//            R.drawable.an4,
+//            R.drawable.an5,
+//            R.drawable.an6,
+//            R.drawable.an7,
+//            R.drawable.an8,
+//            R.drawable.an9,
+//            R.drawable.an10,
+//            R.drawable.an11,
+//            R.drawable.an12,
+//            R.drawable.an13,
+//            R.drawable.an14,
+//            R.drawable.an15,
+//            R.drawable.an16,
+//            R.drawable.an17,
+//            R.drawable.an18,
+//            R.drawable.an19,
+//            R.drawable.an20,
+//            R.drawable.an21,
+//            R.drawable.an22,
+//            R.drawable.an23,
+//            R.drawable.an24,
+//            R.drawable.an25,
+//            R.drawable.an26,
+//            R.drawable.an27,
+//            R.drawable.an28,
+//            R.drawable.an29,
+//            R.drawable.an30,
+//            R.drawable.an31,
+//            R.drawable.an32,
+//            R.drawable.an33,
+//            R.drawable.an34,
+//            R.drawable.an35,
+//            R.drawable.an36,
+//            R.drawable.an37,
+//            R.drawable.an38,
+//            R.drawable.an39,
+//            R.drawable.an40
+//
+//    };
 
-            "ค้างคาว","ควาย","จระเข้","วัว","ลิง","ปู","อูฐ","งู","หมา","ช้าง","กระทิง","อีกา","เป็ด","เสือดาว","ไก่","แมว","กวาง","ปลาทอง","กบ","แพะ",
-            "อิปโป","จิงโจ้","สิงโต","นกฮูก","นกแก้ว","นกเพนกวิ้น","กระต่าย","หมู","หนู","ปลาฉลาม","แกะ","แมงมุม","เสือ","ม้าลาย","เต่า","หมี","หอยทาก","ปลาดาว","ม้าน้ำ","ปลาโลมา"
+    String imageName[] ={
+            "ไก่แจ้",
+            "ไก่",
+            "ลูกเจี๊ยบ",
+            "นกยูง",
+            "ลา",
+            "วัว",
+            "ควาย",
+            "กระทิง",
+            "แกะ",
+            "หนู",
+            "กระต่าย",
+            "แพะ",
+            "หมู",
+            "นก",
+            "ผึ้ง",
+            "ห่าน",
+            "นกกระจอก",
+            "นกแก้ว",
+            "แมลงกวาง",
+            "จามรี",
+            "แมว",
+            "หนูขาว",
+            "หนูน้ำเงิน",
+            "หนูน้ำตาล",
+            "เต่า",
+            "แมวน้ำ",
+            "หนูนา",
+            "กิ้งก่า"
     };
 
-    int randomName[] = {
-            0, 0, 0, 0, 0, 0, 0, 0, 0
+    int randomName [] = {
+            0,0,0,0,0,0,0,0,0
+
+
+
 
 
     };
 
 
     int[] image = {
-            R.drawable.an1,
-            R.drawable.an2,
-            R.drawable.an3,
-            R.drawable.an4,
-            R.drawable.an5,
-            R.drawable.an6,
-            R.drawable.an7,
-            R.drawable.an8,
-            R.drawable.an9,
-            R.drawable.an10,
-            R.drawable.an11,
-            R.drawable.an12,
-            R.drawable.an13,
-            R.drawable.an14,
-            R.drawable.an15,
-            R.drawable.an16,
-            R.drawable.an17,
-            R.drawable.an18,
-            R.drawable.an19,
-            R.drawable.an20,
-            R.drawable.an21,
-            R.drawable.an22,
-            R.drawable.an23,
-            R.drawable.an24,
-            R.drawable.an25,
-            R.drawable.an26,
-            R.drawable.an27,
-            R.drawable.an28,
-            R.drawable.an29,
-            R.drawable.an30,
-            R.drawable.an31,
-            R.drawable.an32,
-            R.drawable.an33,
-            R.drawable.an34,
-            R.drawable.an35,
-            R.drawable.an36,
-            R.drawable.an37,
-            R.drawable.an38,
-            R.drawable.an39,
-            R.drawable.an40
+            R.drawable.animals_1,
+            R.drawable.animals_2,
+            R.drawable.animals_3,
+            R.drawable.animals_4,
+            R.drawable.animals_5,
+            R.drawable.animals_6,
+            R.drawable.animals_7,
+            R.drawable.animals_8,
+            R.drawable.animals_9,
+            R.drawable.animals_10,
+            R.drawable.animals_11,
+            R.drawable.animals_12,
+            R.drawable.animals_13,
+            R.drawable.animals_14,
+            R.drawable.animals_15,
+            R.drawable.animals_16,
+            R.drawable.animals_17,
+            R.drawable.animals_18,
+            R.drawable.animals_19,
+            R.drawable.animals_20,
+            R.drawable.animals_21,
+            R.drawable.animals_22,
+            R.drawable.animals_23,
+            R.drawable.animals_24,
+            R.drawable.animals_25,
+            R.drawable.animals_26,
+            R.drawable.animals_27,
+            R.drawable.animals_28
 
     };
 
@@ -206,8 +279,16 @@ public class Game_Animal__9_picture extends AppCompatActivity {
             }
         })
         ;
+        home = (Button) findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplication(), ModeGame.class);
+                startActivity(intent);
 
-
+            }
+        })
+        ;
         image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -407,7 +488,7 @@ public class Game_Animal__9_picture extends AppCompatActivity {
 
         i = 0;
         for (int v : imageViews) {
-            int next = random.nextInt(40)+1;;
+            int next = random.nextInt(27)+1;;
             if (!generated.contains(next)) {
                 generated.add(next);
                 ImageView iv = (ImageView) findViewById(v);
