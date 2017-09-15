@@ -69,7 +69,7 @@ public class Game_Animal__3_picture extends AppCompatActivity {
     };
 
     int randomName [] = {
-            0,0,0,0,0,0,0,0,0
+            0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 
 
@@ -133,17 +133,17 @@ public class Game_Animal__3_picture extends AppCompatActivity {
         MyTimer mt = new MyTimer();
         timer.schedule(mt,0, 3000);
 
-        Timer timer1 = new Timer();
-        MyTimer1 mt1 = new MyTimer1();
-        timer1.schedule(mt1, 3000, 3000);
-
-        Timer timer2 = new Timer();
-        MyTimer2 mt2 = new MyTimer2();
-        timer2.schedule(mt2, 6000, 3000);
-
-        Timer timer3 = new Timer();
-        MyTimer3 mt3 = new MyTimer3();
-        timer3.schedule(mt3, 9000, 3000);
+//        Timer timer1 = new Timer();
+//        MyTimer1 mt1 = new MyTimer1();
+//        timer1.schedule(mt1, 3000, 3000);
+//
+//        Timer timer2 = new Timer();
+//        MyTimer2 mt2 = new MyTimer2();
+//        timer2.schedule(mt2, 6000, 3000);
+//
+//        Timer timer3 = new Timer();
+//        MyTimer3 mt3 = new MyTimer3();
+//        timer3.schedule(mt3, 9000, 3000);
 
 
         mChronometer = (Chronometer) findViewById(R.id.chronometer);
@@ -205,13 +205,12 @@ public class Game_Animal__3_picture extends AppCompatActivity {
 
 
     class MyTimer extends TimerTask {
-
+ int i = 0;
         public void run() {
 
             runOnUiThread(new Runnable() {
                 Random rand = new Random();
                 public void run() {
-
 
                     int[] Images = {
                             R.drawable.animals_1,
@@ -246,16 +245,23 @@ public class Game_Animal__3_picture extends AppCompatActivity {
                     };
 
 
+
+                       final int name = getRandomNumber() ;
+                        randomName[i] = name;
+                                 i++;
+
+                    mylay.setBackgroundResource(Images[name]) ;
+
                     mylay.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-
-                            Log.d("show", imageName[getRandomNumber()]);
-
+                            Log.d("show", imageName[name]);
+                            textName1.setText(name);
+                            intent.putExtra("nameimage1", textName1.getText().toString());
+                            startActivity(intent);
                         }
                     });
 
-                    mylay.setBackgroundResource(Images[getRandomNumber()]) ;
 
                 }
 
@@ -270,163 +276,163 @@ public class Game_Animal__3_picture extends AppCompatActivity {
     }
 
 
-
-
-    class MyTimer1 extends TimerTask {
-
-        public void run() {
-
-            runOnUiThread(new Runnable() {
-                Random rand = new Random();
-                public void run() {
-                    int[] Images1 = {
-                            R.drawable.animals_1,
-                            R.drawable.animals_2,
-                            R.drawable.animals_3,
-                            R.drawable.animals_4,
-                            R.drawable.animals_5,
-                            R.drawable.animals_6,
-                            R.drawable.animals_7,
-                            R.drawable.animals_8,
-                            R.drawable.animals_9,
-                            R.drawable.animals_10,
-                            R.drawable.animals_11,
-                            R.drawable.animals_12,
-                            R.drawable.animals_13,
-                            R.drawable.animals_14,
-                            R.drawable.animals_15,
-                            R.drawable.animals_16,
-                            R.drawable.animals_17,
-                            R.drawable.animals_18,
-                            R.drawable.animals_19,
-                            R.drawable.animals_20,
-                            R.drawable.animals_21,
-                            R.drawable.animals_22,
-                            R.drawable.animals_23,
-                            R.drawable.animals_24,
-                            R.drawable.animals_25,
-                            R.drawable.animals_26,
-                            R.drawable.animals_27,
-                            R.drawable.animals_28};
-
-                    mylay1.setBackgroundResource(Images1[getRandomNumber()]);
-                    mylay.setVisibility(View.INVISIBLE);
-
-
-                }
-
-                private int getRandomNumber() {
-                    // TODO Auto-generated method stub
-                    return new Random().nextInt(28);}
-            });
-        }
-    }
-
-    class MyTimer2 extends TimerTask {
-
-        public void run() {
-
-            runOnUiThread(new Runnable() {
-                Random rand = new Random();
-
-                public void run() {
-
-                    int[] Images2 = {
-                            R.drawable.animals_1,
-                            R.drawable.animals_2,
-                            R.drawable.animals_3,
-                            R.drawable.animals_4,
-                            R.drawable.animals_5,
-                            R.drawable.animals_6,
-                            R.drawable.animals_7,
-                            R.drawable.animals_8,
-                            R.drawable.animals_9,
-                            R.drawable.animals_10,
-                            R.drawable.animals_11,
-                            R.drawable.animals_12,
-                            R.drawable.animals_13,
-                            R.drawable.animals_14,
-                            R.drawable.animals_15,
-                            R.drawable.animals_16,
-                            R.drawable.animals_17,
-                            R.drawable.animals_18,
-                            R.drawable.animals_19,
-                            R.drawable.animals_20,
-                            R.drawable.animals_21,
-                            R.drawable.animals_22,
-                            R.drawable.animals_23,
-                            R.drawable.animals_24,
-                            R.drawable.animals_25,
-                            R.drawable.animals_26,
-                            R.drawable.animals_27,
-                            R.drawable.animals_28
-                    };
-
-                    mylay2.setBackgroundResource(Images2[getRandomNumber()]);
-                    mylay.setVisibility(View.INVISIBLE);
-                    mylay1.setVisibility(View.INVISIBLE);
-
-                }
-
-                private int getRandomNumber() {
-                    // TODO Auto-generated method stub
-                    return new Random().nextInt(28);
-                }
-            });
-        }
-    }
-    class MyTimer3 extends TimerTask {
-
-        public void run() {
-
-            runOnUiThread(new Runnable() {
-                Random rand = new Random();
-                public void run() {
-
-                    int[] Images3 = {
-                            R.drawable.animals_1,
-                            R.drawable.animals_2,
-                            R.drawable.animals_3,
-                            R.drawable.animals_4,
-                            R.drawable.animals_5,
-                            R.drawable.animals_6,
-                            R.drawable.animals_7,
-                            R.drawable.animals_8,
-                            R.drawable.animals_9,
-                            R.drawable.animals_10,
-                            R.drawable.animals_11,
-                            R.drawable.animals_12,
-                            R.drawable.animals_13,
-                            R.drawable.animals_14,
-                            R.drawable.animals_15,
-                            R.drawable.animals_16,
-                            R.drawable.animals_17,
-                            R.drawable.animals_18,
-                            R.drawable.animals_19,
-                            R.drawable.animals_20,
-                            R.drawable.animals_21,
-                            R.drawable.animals_22,
-                            R.drawable.animals_23,
-                            R.drawable.animals_24,
-                            R.drawable.animals_25,
-                            R.drawable.animals_26,
-                            R.drawable.animals_27,
-                            R.drawable.animals_28
-                    };
-
-                    mylay3.setBackgroundResource(Images3[getRandomNumber()]);
-                    mylay.setVisibility(View.INVISIBLE);
-                    mylay1.setVisibility(View.INVISIBLE);
-                    mylay2.setVisibility(View.INVISIBLE);
-
-                }
-
-                private int getRandomNumber() {
-                    // TODO Auto-generated method stub
-                    return new Random().nextInt(28);}
-            });
-        }
-    }
+//
+//
+//    class MyTimer1 extends TimerTask {
+//
+//        public void run() {
+//
+//            runOnUiThread(new Runnable() {
+//                Random rand = new Random();
+//                public void run() {
+//                    int[] Images1 = {
+//                            R.drawable.animals_1,
+//                            R.drawable.animals_2,
+//                            R.drawable.animals_3,
+//                            R.drawable.animals_4,
+//                            R.drawable.animals_5,
+//                            R.drawable.animals_6,
+//                            R.drawable.animals_7,
+//                            R.drawable.animals_8,
+//                            R.drawable.animals_9,
+//                            R.drawable.animals_10,
+//                            R.drawable.animals_11,
+//                            R.drawable.animals_12,
+//                            R.drawable.animals_13,
+//                            R.drawable.animals_14,
+//                            R.drawable.animals_15,
+//                            R.drawable.animals_16,
+//                            R.drawable.animals_17,
+//                            R.drawable.animals_18,
+//                            R.drawable.animals_19,
+//                            R.drawable.animals_20,
+//                            R.drawable.animals_21,
+//                            R.drawable.animals_22,
+//                            R.drawable.animals_23,
+//                            R.drawable.animals_24,
+//                            R.drawable.animals_25,
+//                            R.drawable.animals_26,
+//                            R.drawable.animals_27,
+//                            R.drawable.animals_28};
+//
+//                    mylay1.setBackgroundResource(Images1[getRandomNumber()]);
+//                    mylay.setVisibility(View.INVISIBLE);
+//
+//
+//                }
+//
+//                private int getRandomNumber() {
+//                    // TODO Auto-generated method stub
+//                    return new Random().nextInt(28);}
+//            });
+//        }
+//    }
+//
+//    class MyTimer2 extends TimerTask {
+//
+//        public void run() {
+//
+//            runOnUiThread(new Runnable() {
+//                Random rand = new Random();
+//
+//                public void run() {
+//
+//                    int[] Images2 = {
+//                            R.drawable.animals_1,
+//                            R.drawable.animals_2,
+//                            R.drawable.animals_3,
+//                            R.drawable.animals_4,
+//                            R.drawable.animals_5,
+//                            R.drawable.animals_6,
+//                            R.drawable.animals_7,
+//                            R.drawable.animals_8,
+//                            R.drawable.animals_9,
+//                            R.drawable.animals_10,
+//                            R.drawable.animals_11,
+//                            R.drawable.animals_12,
+//                            R.drawable.animals_13,
+//                            R.drawable.animals_14,
+//                            R.drawable.animals_15,
+//                            R.drawable.animals_16,
+//                            R.drawable.animals_17,
+//                            R.drawable.animals_18,
+//                            R.drawable.animals_19,
+//                            R.drawable.animals_20,
+//                            R.drawable.animals_21,
+//                            R.drawable.animals_22,
+//                            R.drawable.animals_23,
+//                            R.drawable.animals_24,
+//                            R.drawable.animals_25,
+//                            R.drawable.animals_26,
+//                            R.drawable.animals_27,
+//                            R.drawable.animals_28
+//                    };
+//
+//                    mylay2.setBackgroundResource(Images2[getRandomNumber()]);
+//                    mylay.setVisibility(View.INVISIBLE);
+//                    mylay1.setVisibility(View.INVISIBLE);
+//
+//                }
+//
+//                private int getRandomNumber() {
+//                    // TODO Auto-generated method stub
+//                    return new Random().nextInt(28);
+//                }
+//            });
+//        }
+//    }
+//    class MyTimer3 extends TimerTask {
+//
+//        public void run() {
+//
+//            runOnUiThread(new Runnable() {
+//                Random rand = new Random();
+//                public void run() {
+//
+//                    int[] Images3 = {
+//                            R.drawable.animals_1,
+//                            R.drawable.animals_2,
+//                            R.drawable.animals_3,
+//                            R.drawable.animals_4,
+//                            R.drawable.animals_5,
+//                            R.drawable.animals_6,
+//                            R.drawable.animals_7,
+//                            R.drawable.animals_8,
+//                            R.drawable.animals_9,
+//                            R.drawable.animals_10,
+//                            R.drawable.animals_11,
+//                            R.drawable.animals_12,
+//                            R.drawable.animals_13,
+//                            R.drawable.animals_14,
+//                            R.drawable.animals_15,
+//                            R.drawable.animals_16,
+//                            R.drawable.animals_17,
+//                            R.drawable.animals_18,
+//                            R.drawable.animals_19,
+//                            R.drawable.animals_20,
+//                            R.drawable.animals_21,
+//                            R.drawable.animals_22,
+//                            R.drawable.animals_23,
+//                            R.drawable.animals_24,
+//                            R.drawable.animals_25,
+//                            R.drawable.animals_26,
+//                            R.drawable.animals_27,
+//                            R.drawable.animals_28
+//                    };
+//
+//                    mylay3.setBackgroundResource(Images3[getRandomNumber()]);
+//                    mylay.setVisibility(View.INVISIBLE);
+//                    mylay1.setVisibility(View.INVISIBLE);
+//                    mylay2.setVisibility(View.INVISIBLE);
+//
+//                }
+//
+//                private int getRandomNumber() {
+//                    // TODO Auto-generated method stub
+//                    return new Random().nextInt(28);}
+//            });
+//        }
+//    }
 
 
 
